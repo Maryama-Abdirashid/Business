@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mini Online Store - Cart</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Maryama's Business</h1>
+    <nav>
+      <a href="index.html">Home 🏠</a>
+    </nav>
+
+    <!-- Theme toggle icon -->
+    <div id="theme-toggle" aria-label="Toggle theme" role="button" tabindex="0" title="Toggle theme">
+      <!-- SVG icon inserted by JS -->
+    </div>
+  </header>
+
+  <main>
+    <div id="cart-container"></div>
+    <div id="cart-summary" class="cart-summary">
+      <p>Total: $<span id="total-price">0</span></p>
+      <button id="whatsapp-order-btn" disabled>Order via WhatsApp</button>
+    </div>
+  </main>
+
+  <script>
+    window.isCartPage = true;
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>

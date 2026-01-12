@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Maryama's Business</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Maryama's Business</h1>
+    <nav>
+      <a href="cart.html">Cart 🛒 (<span id="cart-count">0</span>)</a>
+    </nav>
+
+    <!-- Theme toggle icon -->
+    <div id="theme-toggle" aria-label="Toggle theme" role="button" tabindex="0" title="Toggle theme">
+      <!-- SVG icon inserted by JS -->
+    </div>
+  </header>
+
+  <main>
+    <div id="products-container" class="products-grid"></div>
+  </main>
+
+  <script>
+    window.isHomePage = true;
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
