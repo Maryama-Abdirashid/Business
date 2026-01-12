@@ -238,7 +238,7 @@ function removeFromCart(id) {
 function sendOrderViaWhatsApp() {
   if (cart.length === 0) return;
 
-  let message = "Hello, I'd like to order the following items:%0A";
+  let message = "Hi Waxa raba ina sheygan dalbado ado mahadsan:";
 
   cart.forEach(item => {
     const product = products.find(p => p.id === item.id);
@@ -253,7 +253,7 @@ function sendOrderViaWhatsApp() {
 
   message += `%0ATotal: $${total.toFixed(2)}`;
 
-  const phoneNumber = "252683716189"; 
+  const phoneNumber = "252619020246"; 
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
 
   window.open(whatsappUrl, "_blank");
